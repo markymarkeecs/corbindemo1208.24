@@ -1,0 +1,77 @@
+.card {
+  width: 57px;
+  height: 80px;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  background-color: white;
+  cursor: pointer;
+  user-select: none;
+  transition: transform 0.2s ease-out;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+  position: relative;
+  padding: 3px;
+}
+
+.number-area {
+  position: absolute;
+  font-size: 0.8em;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.number-area.top {
+  top: 2px;
+  left: 2px;
+}
+
+.number-area.bottom {
+  bottom: 2px;
+  right: 2px;
+  transform: rotate(180deg);
+}
+
+.center-suit {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.6em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Suit colors */
+.card .number-area,
+.card .center-suit {
+  color: #212121;
+}
+
+.card[data-suit="♥"] .number-area,
+.card[data-suit="♥"] .center-suit,
+.card[data-suit="♦"] .number-area,
+.card[data-suit="♦"] .center-suit {
+  color: #d32f2f;
+}
+
+/* Card states */
+.card.selected {
+  border-color: #ffd700;
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.7);
+  transform: translateY(-5px);
+  z-index: 1000 !important;
+}
+
+.card:active {
+  cursor: grabbing;
+  transform: scale(1.02);
+  opacity: 0.9;
+}
+
+.card.back {
+  background-color: #2196f3;
+  color: white;
+  cursor: default;
+  background-image: linear-gradient(45deg, #1976d2 25%, #2196f3 25%, #2196f3 50%, #1976d2 50%, #1976d2 75%, #2196f3 75%, #2196f3 100%);
+  background-size: 10px 10px;
+}

@@ -1,0 +1,57 @@
+.poker-table {
+  background-color: #277234;
+  border-radius: 200px;
+  padding: 40px;
+  margin: 20px;
+  min-height: 600px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.computer-hand, .player-hand {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.community-cards {
+  display: flex;
+  gap: 10px;
+  margin: 40px 0;
+}
+
+.controls {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.controls button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #f0f0f0;
+  border: none;
+  border-radius: 5px;
+}
+
+.controls button:hover {
+  background-color: #e0e0e0;
+}
+
+.chips-display {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: white;
+  font-size: 18px;
+}
+
+.player-info {
+  color: white;
+  font-size: 18px;
+  margin: 10px 0;
+  text-align: center;
+} 

@@ -1,0 +1,28 @@
+.pile {
+  width: 57px !important;
+  min-height: 80px !important;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.05);
+  margin: 0 4px;
+  position: relative;
+}
+
+.pile.tableau .card {
+  position: absolute;
+  left: 0;
+  margin-top: -76px;
+}
+
+.pile.tableau .card:first-child {
+  margin-top: 0;
+}
+
+.pile.droppable {
+  background-color: rgba(255, 215, 0, 0.1);
+  border: 2px dashed #ffd700 !important;
+}
+
+.pile.droppable:hover {
+  background-color: rgba(255, 215, 0, 0.2);
+} 
